@@ -1,0 +1,49 @@
+.pageWrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#logo {
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.warp {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.HeaderDivider {
+    height: 44px;
+    margin: 10px 0; 
+    float: left;
+}
+#nav {
+    float: left;
+    margin-left: 30px;
+    background: none;
+    border: none;
+    line-height: 62px;
+}
+#nav a {
+    color:#fff;
+}
+#nav .ant-menu-item-selected a {
+    color: #1890ff;
+}
+
+.xsNav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.main {
+    flex: 1;
+}
+
+.main .warp {
+    border: 1px solid #ccc;
+    border-top: none;
+}
