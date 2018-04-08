@@ -74,9 +74,9 @@ export default class TodoBox extends Component {
         return (
             <div>
                 <div className="well">
-                <h1 className="text-center">React TodoList</h1>
-                <TodoList data={this.state.data} toggleComplete={this.handleToggleComplete} deleteTask={this.handleTaskDelete}/>
-                <AddTodoItem saveNewItem={this.handleAddTodoItem}/>
+                    <h1 className="text-center">React TodoList</h1>
+                    <TodoList data={this.state.data} toggleComplete={this.handleToggleComplete} deleteTask={this.handleTaskDelete}/>
+                    <AddTodoItem saveNewItem={this.handleAddTodoItem}/>
                 </div>
             </div>
         )

@@ -11,7 +11,7 @@ export default class AddTodoItem extends Component {
     saveNewItem(e){
         e.preventDefault();
         let element = ReactDOM.findDOMNode(this.refs.newItem);
-        console.log(element);
+        // console.log(element);
         let task = element.value;
         if (!task) {
             notification.open({
@@ -28,9 +28,9 @@ export default class AddTodoItem extends Component {
         return (
             <div className="addtodoitem">
                 <Form.Item>
-                <label htmlFor="newItem"></label>
-                <Input id="newItem" ref="newItem" type="text" placeholder="吃饭睡觉打豆豆~"></Input>
-                <Button type="primary" className="pull-right" onClick={this.saveNewItem}>保存</Button>
+                    <label htmlFor="newItem"></label>
+                    <Input id="newItem" ref="newItem" type="text" placeholder="吃饭睡觉打豆豆~"></Input>
+                    <Button type="primary" className="pull-right" onClick={this.saveNewItem}>保存</Button>
                 </Form.Item>
             </div>
         )
